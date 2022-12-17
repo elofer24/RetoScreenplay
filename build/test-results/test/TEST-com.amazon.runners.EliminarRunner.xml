@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amazon.runners.EliminarRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-9HHE8H5" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/eliminar.feature:9 ?[0m# eliminar prductos del carrito
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[33m2 undefined?[0m)
+1m21,924s
+
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:22)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6$$FastClassByCGLIB$$785f3e13.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
+	at com.amazon.stepDefinitions.RegistroStepDefinition.elUsuarioSeEncuentraEnLaPaginaWeb(RegistroStepDefinition.java:39)
+	at ?.el usuario se encuentra en la pagina web(src/test/resources/features/eliminar.feature:6)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HHE8H5', ip: '192.168.1.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E9ACD3+2075859]
+	Ordinal0 [0x00E2EE61+1633889]
+	Ordinal0 [0x00D2B680+571008]
+	Ordinal0 [0x00D212EA+529130]
+	Ordinal0 [0x00D4D96E+711022]
+	Ordinal0 [0x00D49266+692838]
+	Ordinal0 [0x00D46BE9+682985]
+	Ordinal0 [0x00D7DBD3+908243]
+	Ordinal0 [0x00D7D6AA+906922]
+	Ordinal0 [0x00D77136+880950]
+	Ordinal0 [0x00D4FEFD+720637]
+	Ordinal0 [0x00D50F3F+724799]
+	GetHandleVerifier [0x0114EED2+2769538]
+	GetHandleVerifier [0x01140D95+2711877]
+	GetHandleVerifier [0x00F2A03A+521194]
+	GetHandleVerifier [0x00F28DA0+516432]
+	Ordinal0 [0x00E3682C+1665068]
+	Ordinal0 [0x00E3B128+1683752]
+	Ordinal0 [0x00E3B215+1683989]
+	Ordinal0 [0x00E46484+1729668]
+	BaseThreadInitThunk [0x75C3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77587A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77587A4E+238]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:22)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6$$FastClassByCGLIB$$785f3e13.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
+	at com.amazon.stepDefinitions.RegistroStepDefinition.elUsuarioSeEncuentraEnLaPaginaWeb(RegistroStepDefinition.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HHE8H5', ip: '192.168.1.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E9ACD3+2075859]
+	Ordinal0 [0x00E2EE61+1633889]
+	Ordinal0 [0x00D2B680+571008]
+	Ordinal0 [0x00D212EA+529130]
+	Ordinal0 [0x00D4D96E+711022]
+	Ordinal0 [0x00D49266+692838]
+	Ordinal0 [0x00D46BE9+682985]
+	Ordinal0 [0x00D7DBD3+908243]
+	Ordinal0 [0x00D7D6AA+906922]
+	Ordinal0 [0x00D77136+880950]
+	Ordinal0 [0x00D4FEFD+720637]
+	Ordinal0 [0x00D50F3F+724799]
+	GetHandleVerifier [0x0114EED2+2769538]
+	GetHandleVerifier [0x01140D95+2711877]
+	GetHandleVerifier [0x00F2A03A+521194]
+	GetHandleVerifier [0x00F28DA0+516432]
+	Ordinal0 [0x00E3682C+1665068]
+	Ordinal0 [0x00E3B128+1683752]
+	Ordinal0 [0x00E3B215+1683989]
+	Ordinal0 [0x00E46484+1729668]
+	BaseThreadInitThunk [0x75C3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77587A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77587A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	... 78 more
+
+
+You can implement missing steps with the snippets below:
+
+@Cuando("^el seleccione la opcion carrito de compras podra eliminar los productos$")
+public void elSeleccioneLaOpcionCarritoDeComprasPodraEliminarLosProductos() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+
+@Entonces("^el visualizara su carro de compras vacio$")
+public void elVisualizaraSuCarroDeComprasVacio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: eliminar productos
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: eliminar prductos del carrito
+-------------------------------------------------------------------(eliminar-productos;eliminar-prductos-del-carrito)
+]]></system-err>
+</testsuite>
